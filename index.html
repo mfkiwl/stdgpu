@@ -1,0 +1,785 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Overview &#8212; stdgpu Latest documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/stdgpu_custom_sphinx.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="icon" href="_static/stdgpu_logo.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapters" href="api/chapters.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/stdgpu_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="_static/stdgpu_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+    <p class="title logo__title">Latest</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Overview</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="api/chapters.html">Chapters</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="api/memory.html">Memory Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/iterator.html">Iterating over Arrays and Containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api/object.html">Container Objects</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen/modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen/annotated.html">Class List</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen/files.html">File List</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/stotko/stdgpu" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Overview</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building">Building</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">Contact</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h1>
+<p align="center">
+<a href="https://github.com/stotko/stdgpu/actions?query=workflow%3A%22Ubuntu+OpenMP%22" alt="Ubuntu">
+    <img src="https://github.com/stotko/stdgpu/workflows/Ubuntu%20OpenMP/badge.svg"/>
+</a>
+<a href="https://github.com/stotko/stdgpu/actions?query=workflow%3A%22Windows+OpenMP%22" alt="Windows">
+    <img src="https://github.com/stotko/stdgpu/workflows/Windows%20OpenMP/badge.svg"/>
+</a>
+<a href="https://codecov.io/gh/stotko/stdgpu" alt="Code Coverage">
+  <img src="https://codecov.io/gh/stotko/stdgpu/branch/master/graph/badge.svg" />
+</a>
+<a href="https://scan.coverity.com/projects/stotko-stdgpu" alt="Coverity Scan">
+   <img src="https://scan.coverity.com/projects/20259/badge.svg"/>
+</a>
+<a href="https://bestpractices.coreinfrastructure.org/projects/3645" alt="Best Practices">
+    <img src="https://bestpractices.coreinfrastructure.org/projects/3645/badge">
+</a>
+<a href="https://stotko.github.io/stdgpu" alt="Documentation">
+    <img src="https://img.shields.io/badge/docs-Latest-green.svg"/>
+</a>
+<a href="https://github.com/stotko/stdgpu/blob/master/CONTRIBUTING.md" alt="Contributing">
+    <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"/>
+</a>
+<a href="https://github.com/stotko/stdgpu/blob/master/LICENSE" alt="License">
+    <img src="https://img.shields.io/github/license/stotko/stdgpu"/>
+</a>
+<a href="https://github.com/stotko/stdgpu/releases" alt="Latest Release">
+    <img src="https://img.shields.io/github/v/release/stotko/stdgpu"/>
+</a>
+</p>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading">#</a></h2>
+<p>stdgpu is an open-source library providing several generic GPU data structures for fast and reliable data management. Multiple platforms such as <strong>CUDA</strong>, <strong>OpenMP</strong>, and <strong>HIP</strong> are supported allowing you to rapidly write highly complex <strong>agnostic</strong> and <strong>native</strong> algorithms that look like sequential CPU code but are executed in parallel on the GPU.</p>
+<ul class="simple">
+<li><p><strong>Productivity</strong>. Previous libraries such as thrust, VexCL, ArrayFire or Boost.Compute focus on the fast and efficient implementation of various algorithms for contiguously stored data to enhance productivity. stdgpu follows an <em>orthogonal approach</em> and focuses on <em>fast and reliable data management</em> to enable the rapid development of more general and flexible GPU algorithms just like their CPU counterparts.</p></li>
+<li><p><strong>Interoperability</strong>. Instead of providing yet another ecosystem, stdgpu is designed to be a <em>lightweight container library</em>. Therefore, a core feature of stdgpu is its interoperability with previous established frameworks, i.e. the thrust library, to enable a <em>seamless integration</em> into new as well as existing projects.</p></li>
+<li><p><strong>Maintainability</strong>. Following the trend in recent C++ standards of providing functionality for safer and more reliable programming, the philosophy of stdgpu is to provide <em>clean and familiar functions</em> with strong guarantees that encourage users to write <em>more robust code</em> while giving them full control to achieve a high performance.</p></li>
+</ul>
+<p>At its heart, stdgpu offers the following GPU data structures and containers:</p>
+<table>
+<tr align="center">
+<td><a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1atomic.html"><code>atomic</code></a> &amp; <a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1atomic__ref.html"><code>atomic_ref</code></a><br>Atomic primitive types and references</td>
+<td><a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1bitset.html"><code>bitset</code></a><br>Space-efficient bit array</td>
+<td><a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1deque.html"><code>deque</code></a><br>Dynamically sized double-ended queue</td>
+</tr>
+<tr align="center">
+<td><a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1queue.html"><code>queue</code></a> &amp; <a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1stack.html"><code>stack</code></a><br>Container adapters</td>
+<td><a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1unordered__map.html"><code>unordered_map</code></a> &amp; <a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1unordered__set.html"><code>unordered_set</code></a><br>Hashed collection of unique keys and key-value pairs</td>
+<td><a href="https://stotko.github.io/stdgpu/doxygen/classstdgpu_1_1vector.html"><code>vector</code></a><br>Dynamically sized contiguous array</td>
+</tr>
+</table>
+<p>In addition, stdgpu also provides commonly required functionality in <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/algorithm_8h.html"><code class="docutils literal notranslate"><span class="pre">algorithm</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/bit_8h.html"><code class="docutils literal notranslate"><span class="pre">bit</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/contract_8h.html"><code class="docutils literal notranslate"><span class="pre">contract</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/cstddef_8h.html"><code class="docutils literal notranslate"><span class="pre">cstddef</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/functional_8h.html"><code class="docutils literal notranslate"><span class="pre">functional</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/iterator_8h.html"><code class="docutils literal notranslate"><span class="pre">iterator</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/limits_8h.html"><code class="docutils literal notranslate"><span class="pre">limits</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/memory_8h.html"><code class="docutils literal notranslate"><span class="pre">memory</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/mutex_8cuh.html"><code class="docutils literal notranslate"><span class="pre">mutex</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/ranges_8h.html"><code class="docutils literal notranslate"><span class="pre">ranges</span></code></a>, <a class="reference external" href="https://stotko.github.io/stdgpu/doxygen/utility_8h.html"><code class="docutils literal notranslate"><span class="pre">utility</span></code></a> to complement the GPU data structures and to increase their usability and interoperability.</p>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h2>
+<p>In order to reliably perform complex tasks on the GPU, stdgpu offers flexible interfaces that can be used in both <strong>agnostic code</strong>, e.g. via the algorithms provided by thrust, as well as in <strong>native code</strong>, e.g. in custom CUDA kernels.</p>
+<p>For instance, stdgpu is extensively used in <a class="reference external" href="https://www.researchgate.net/publication/331303359_SLAMCast_Large-Scale_Real-Time_3D_Reconstruction_and_Streaming_for_Immersive_Multi-Client_Live_Telepresence">SLAMCast</a>, a scalable live telepresence system, to implement real-time, large-scale 3D scene reconstruction as well as real-time 3D data streaming between a server and an arbitrary number of remote clients.</p>
+<p><strong>Agnostic code</strong>. In the context of <a class="reference external" href="https://www.researchgate.net/publication/331303359_SLAMCast_Large-Scale_Real-Time_3D_Reconstruction_and_Streaming_for_Immersive_Multi-Client_Live_Telepresence">SLAMCast</a>, a simple task is the integration of a range of updated blocks into the duplicate-free set of queued blocks for data streaming which can be expressed very conveniently:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdgpu/cstddef.h&gt;</span><span class="c1">             // stdgpu::index_t</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdgpu/iterator.h&gt;</span><span class="c1">            // stdgpu::make_device</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdgpu/unordered_set.cuh&gt;</span><span class="c1">     // stdgpu::unordered_set</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">stream_set</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">void</span>
+<span class="w">    </span><span class="n">add_blocks</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">short3</span><span class="o">*</span><span class="w"> </span><span class="n">blocks</span><span class="p">,</span>
+<span class="w">               </span><span class="k">const</span><span class="w"> </span><span class="n">stdgpu</span><span class="o">::</span><span class="n">index_t</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">set</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">stdgpu</span><span class="o">::</span><span class="n">make_device</span><span class="p">(</span><span class="n">blocks</span><span class="p">),</span>
+<span class="w">                   </span><span class="n">stdgpu</span><span class="o">::</span><span class="n">make_device</span><span class="p">(</span><span class="n">blocks</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">n</span><span class="p">));</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="c1">// Further functions</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="n">stdgpu</span><span class="o">::</span><span class="n">unordered_set</span><span class="o">&lt;</span><span class="n">short3</span><span class="o">&gt;</span><span class="w"> </span><span class="n">set</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Further members</span>
+<span class="p">};</span>
+</pre></div>
+</div>
+<p><strong>Native code</strong>. More complex operations such as the creation of the duplicate-free set of updated blocks or other algorithms can be implemented natively, e.g. in custom CUDA kernels with stdgpu’s CUDA backend enabled:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdgpu/cstddef.h&gt;</span><span class="c1">             // stdgpu::index_t</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdgpu/unordered_map.cuh&gt;</span><span class="c1">     // stdgpu::unordered_map</span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdgpu/unordered_set.cuh&gt;</span><span class="c1">     // stdgpu::unordered_set</span>
+
+<span class="n">__global__</span><span class="w"> </span><span class="kt">void</span>
+<span class="n">compute_update_set</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">short3</span><span class="o">*</span><span class="w"> </span><span class="n">blocks</span><span class="p">,</span>
+<span class="w">                   </span><span class="k">const</span><span class="w"> </span><span class="n">stdgpu</span><span class="o">::</span><span class="n">index_t</span><span class="w"> </span><span class="n">n</span><span class="p">,</span>
+<span class="w">                   </span><span class="k">const</span><span class="w"> </span><span class="n">stdgpu</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">short3</span><span class="p">,</span><span class="w"> </span><span class="n">voxel</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">tsdf_block_map</span><span class="p">,</span>
+<span class="w">                   </span><span class="n">stdgpu</span><span class="o">::</span><span class="n">unordered_set</span><span class="o">&lt;</span><span class="n">short3</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mc_update_set</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="c1">// Global thread index</span>
+<span class="w">    </span><span class="n">stdgpu</span><span class="o">::</span><span class="n">index_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">blockIdx</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">blockDim</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">threadIdx</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">short3</span><span class="w"> </span><span class="n">b_i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">blocks</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+
+<span class="w">    </span><span class="c1">// Neighboring candidate blocks for the update</span>
+<span class="w">    </span><span class="n">short3</span><span class="w"> </span><span class="n">mc_blocks</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span>
+<span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">short3</span><span class="p">(</span><span class="n">b_i</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span>
+<span class="w">        </span><span class="n">short3</span><span class="p">(</span><span class="n">b_i</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span>
+<span class="w">        </span><span class="n">short3</span><span class="p">(</span><span class="n">b_i</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span>
+<span class="w">        </span><span class="n">short3</span><span class="p">(</span><span class="n">b_i</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="w">        </span><span class="n">short3</span><span class="p">(</span><span class="n">b_i</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">),</span>
+<span class="w">        </span><span class="n">short3</span><span class="p">(</span><span class="n">b_i</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="w">        </span><span class="n">short3</span><span class="p">(</span><span class="n">b_i</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="w">        </span><span class="n">short3</span><span class="p">(</span><span class="n">b_i</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b_i</span><span class="p">.</span><span class="n">z</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">),</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">stdgpu</span><span class="o">::</span><span class="n">index_t</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">j</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// Only consider existing neighbors</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">tsdf_block_map</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="n">mc_blocks</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">mc_update_set</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">mc_blocks</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>More examples can be found in the <a class="reference external" href="https://github.com/stotko/stdgpu/tree/master/examples"><code class="docutils literal notranslate"><span class="pre">examples</span></code></a> directory.</p>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading">#</a></h2>
+<p>A comprehensive introduction into the design and API of stdgpu can be found here:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://stotko.github.io/stdgpu">stdgpu API documentation</a></p></li>
+<li><p><a class="reference external" href="https://thrust.github.io/doc/group__algorithms.html">thrust algorithms documentation</a></p></li>
+<li><p><a class="reference external" href="https://www.researchgate.net/publication/335233070_stdgpu_Efficient_STL-like_Data_Structures_on_the_GPU">Research paper</a></p></li>
+</ul>
+<p>Since a core feature and design goal of stdgpu is its <strong>interoperability</strong> with thrust, it offers <strong>full support for all thrust algorithms</strong> instead of reinventing the wheel. More information about the design can be found in the related <a class="reference external" href="https://www.researchgate.net/publication/335233070_stdgpu_Efficient_STL-like_Data_Structures_on_the_GPU">research paper</a>.</p>
+</section>
+<section id="building">
+<h2>Building<a class="headerlink" href="#building" title="Permalink to this heading">#</a></h2>
+<p>Before building the library, please make sure that all required tools and dependencies are installed on your system. Newer versions are supported as well.</p>
+<p><strong>Required</strong></p>
+<ul class="simple">
+<li><p>C++17 compiler</p>
+<ul>
+<li><p>GCC 9</p>
+<ul>
+<li><p>(Ubuntu 20.04/22.04) <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">g++</span></code></p></li>
+</ul>
+</li>
+<li><p>Clang 10</p>
+<ul>
+<li><p>(Ubuntu 20.04/22.04) <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">clang</span></code></p></li>
+</ul>
+</li>
+<li><p>MSVC 19.20</p>
+<ul>
+<li><p>(Windows) Visual Studio 2019 <a class="reference external" href="https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>CMake 3.18</p>
+<ul>
+<li><p>(Ubuntu 20.04) <a class="reference external" href="https://apt.kitware.com">https://apt.kitware.com</a></p></li>
+<li><p>(Ubuntu 22.04) <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">cmake</span></code></p></li>
+<li><p>(Windows) <a class="reference external" href="https://cmake.org/download">https://cmake.org/download</a></p></li>
+</ul>
+</li>
+<li><p>thrust 1.9.9</p>
+<ul>
+<li><p>(Ubuntu/Windows) <a class="github reference external" href="https://github.com/NVIDIA/thrust">NVIDIA/thrust</a></p></li>
+<li><p>May already be installed by backend dependencies</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Required for CUDA backend</strong></p>
+<ul class="simple">
+<li><p>CUDA compiler</p>
+<ul>
+<li><p>NVCC</p>
+<ul>
+<li><p>Already included in CUDA Toolkit</p></li>
+</ul>
+</li>
+<li><p>Clang 10</p>
+<ul>
+<li><p>(Ubuntu 20.04/22.04) <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">clang</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>CUDA Toolkit 11.0</p>
+<ul>
+<li><p>(Ubuntu/Windows) <a class="reference external" href="https://developer.nvidia.com/cuda-downloads">https://developer.nvidia.com/cuda-downloads</a></p></li>
+<li><p>Includes thrust</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Required for OpenMP backend</strong></p>
+<ul class="simple">
+<li><p>OpenMP 2.0</p>
+<ul>
+<li><p>GCC 9</p>
+<ul>
+<li><p>(Ubuntu 20.04/22.04) Already installed</p></li>
+</ul>
+</li>
+<li><p>Clang 10</p>
+<ul>
+<li><p>(Ubuntu 20.04/22.04) <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">libomp-dev</span></code></p></li>
+</ul>
+</li>
+<li><p>MSVC 19.20</p>
+<ul>
+<li><p>(Windows) Already installed</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Required for HIP backend (experimental)</strong></p>
+<ul class="simple">
+<li><p>HIP compiler</p>
+<ul>
+<li><p>Clang</p>
+<ul>
+<li><p>Already included in ROCm</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ROCm 5.1</p>
+<ul>
+<li><p>(Ubuntu) <a class="github reference external" href="https://github.com/RadeonOpenCompute/ROCm">RadeonOpenCompute/ROCm</a></p></li>
+<li><p>Includes thrust</p></li>
+</ul>
+</li>
+<li><p>CMake 3.21.3</p>
+<ul>
+<li><p>(Ubuntu 20.04) <a class="reference external" href="https://apt.kitware.com">https://apt.kitware.com</a></p></li>
+<li><p>(Ubuntu 22.04) <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">cmake</span></code></p></li>
+<li><p>(Windows) <a class="reference external" href="https://cmake.org/download">https://cmake.org/download</a></p></li>
+<li><p>Required for first-class HIP language support</p></li>
+</ul>
+</li>
+</ul>
+<p>The library can be built as every other project which makes use of the CMake build system.</p>
+<p>In addition, we also provide cross-platform scripts to make the build process more convenient. Since these scripts depend on the selected build type, there are scripts for both <code class="docutils literal notranslate"><span class="pre">debug</span></code> and <code class="docutils literal notranslate"><span class="pre">release</span></code> builds.</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Effect</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">tools/setup.sh</span> <span class="pre">[&lt;build_type&gt;]</span></code></p></td>
+<td><p>Performs a full clean build of the project. Removes old build, configures the project (build path: <code class="docutils literal notranslate"><span class="pre">./build</span></code>, default build type: <code class="docutils literal notranslate"><span class="pre">Release</span></code>), builds the project, and runs the unit tests.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">tools/build.sh</span> <span class="pre">[&lt;build_type&gt;]</span></code></p></td>
+<td><p>(Re-)Builds the project. Requires that the project is set up (default build type: <code class="docutils literal notranslate"><span class="pre">Release</span></code>).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">tools/run_tests.sh</span> <span class="pre">[&lt;build_type&gt;]</span></code></p></td>
+<td><p>Runs the unit tests. Requires that the project is built (default build type: <code class="docutils literal notranslate"><span class="pre">Release</span></code>).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">tools/install.sh</span> <span class="pre">[&lt;build_type&gt;]</span></code></p></td>
+<td><p>Installs the project to the configured install path (default install dir: <code class="docutils literal notranslate"><span class="pre">./bin</span></code>, default build type: <code class="docutils literal notranslate"><span class="pre">Release</span></code>).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bash</span> <span class="pre">tools/uninstall.sh</span> <span class="pre">[&lt;build_type&gt;]</span></code></p></td>
+<td><p>Uninstalls the project from the configured install path (default build type: <code class="docutils literal notranslate"><span class="pre">Release</span></code>).</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="integration">
+<h2>Integration<a class="headerlink" href="#integration" title="Permalink to this heading">#</a></h2>
+<p>In the following, we show some examples on how the library can be integrated into and used in a project.</p>
+<p><strong>CMake Integration</strong>. To use the library in your project, you can either install it externally first and then include it using <code class="docutils literal notranslate"><span class="pre">find_package</span></code>:</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nb">find_package</span><span class="p">(</span><span class="s">stdgpu</span><span class="w"> </span><span class="s">1.0.0</span><span class="w"> </span><span class="s">REQUIRED</span><span class="p">)</span>
+
+<span class="nb">add_library</span><span class="p">(</span><span class="s">foo</span><span class="w"> </span><span class="s">...</span><span class="p">)</span>
+
+<span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">foo</span><span class="w"> </span><span class="s">PUBLIC</span><span class="w"> </span><span class="s">stdgpu::stdgpu</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Or you can embed it into your project and build it from a subdirectory:</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="c"># Exclude the examples from the build</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">STDGPU_BUILD_EXAMPLES</span><span class="w"> </span><span class="s">OFF</span><span class="w"> </span><span class="s">CACHE</span><span class="w"> </span><span class="s">INTERNAL</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+<span class="c"># Exclude the benchmarks from the build</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">STDGPU_BUILD_BENCHMARKS</span><span class="w"> </span><span class="s">OFF</span><span class="w"> </span><span class="s">CACHE</span><span class="w"> </span><span class="s">INTERNAL</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+<span class="c"># Exclude the tests from the build</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">STDGPU_BUILD_TESTS</span><span class="w"> </span><span class="s">OFF</span><span class="w"> </span><span class="s">CACHE</span><span class="w"> </span><span class="s">INTERNAL</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
+<span class="nb">add_subdirectory</span><span class="p">(</span><span class="s">stdgpu</span><span class="p">)</span>
+
+<span class="nb">add_library</span><span class="p">(</span><span class="s">foo</span><span class="w"> </span><span class="s">...</span><span class="p">)</span>
+
+<span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">foo</span><span class="w"> </span><span class="s">PUBLIC</span><span class="w"> </span><span class="s">stdgpu::stdgpu</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>CMake Options</strong>. To configure the library, two sets of options are provided. The following build options control the build process:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Build Option</p></th>
+<th class="head"><p>Effect</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_BACKEND</span></code></p></td>
+<td><p>Device system backend</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_BACKEND_CUDA</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_BUILD_SHARED_LIBS</span></code></p></td>
+<td><p>Builds the project as a shared library, if set to <code class="docutils literal notranslate"><span class="pre">ON</span></code>, or as a static library, if set to <code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">BUILD_SHARED_LIBS</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_SETUP_COMPILER_FLAGS</span></code></p></td>
+<td><p>Constructs the compiler flags</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code> if standalone, <code class="docutils literal notranslate"><span class="pre">OFF</span></code> if included via <code class="docutils literal notranslate"><span class="pre">add_subdirectory</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_COMPILE_WARNING_AS_ERROR</span></code></p></td>
+<td><p>Treats compiler warnings as errors</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_BUILD_EXAMPLES</span></code></p></td>
+<td><p>Build the examples</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_BUILD_BENCHMARKS</span></code></p></td>
+<td><p>Build the benchmarks</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_BUILD_TESTS</span></code></p></td>
+<td><p>Build the unit tests</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_BUILD_TEST_COVERAGE</span></code></p></td>
+<td><p>Build a test coverage report</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_ANALYZE_WITH_CLANG_TIDY</span></code></p></td>
+<td><p>Analyzes the code with clang-tidy</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_ANALYZE_WITH_CPPCHECK</span></code></p></td>
+<td><p>Analyzes the code with cppcheck</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OFF</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>In addition, the implementation of some functionality can be controlled via configuration options:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Configuration Option</p></th>
+<th class="head"><p>Effect</p></th>
+<th class="head"><p>Default</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_ENABLE_CONTRACT_CHECKS</span></code></p></td>
+<td><p>Enable contract checks</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OFF</span></code> if <code class="docutils literal notranslate"><span class="pre">CMAKE_BUILD_TYPE</span></code> equals <code class="docutils literal notranslate"><span class="pre">Release</span></code> or <code class="docutils literal notranslate"><span class="pre">MinSizeRel</span></code>, <code class="docutils literal notranslate"><span class="pre">ON</span></code> otherwise</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">STDGPU_USE_32_BIT_INDEX</span></code></p></td>
+<td><p>Use 32-bit instead of 64-bit signed integer for <code class="docutils literal notranslate"><span class="pre">index_t</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">ON</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this heading">#</a></h2>
+<p>For detailed information on how to contribute, see <a class="reference external" href="https://github.com/stotko/stdgpu/blob/master/CONTRIBUTING.md"><code class="docutils literal notranslate"><span class="pre">CONTRIBUTING</span></code></a>.</p>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this heading">#</a></h2>
+<p>Distributed under the Apache 2.0 License. See <a class="reference external" href="https://github.com/stotko/stdgpu/blob/master/LICENSE"><code class="docutils literal notranslate"><span class="pre">LICENSE</span></code></a> for more information.</p>
+<p>If you use stdgpu in one of your projects, please cite the following publications:</p>
+<p><a class="reference external" href="https://www.researchgate.net/publication/335233070_stdgpu_Efficient_STL-like_Data_Structures_on_the_GPU"><strong>stdgpu: Efficient STL-like Data Structures on the GPU</strong></a></p>
+<div class="highlight-bib notranslate"><div class="highlight"><pre><span></span><span class="nc">@UNPUBLISHED</span><span class="p">{</span><span class="nl">stotko2019stdgpu</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Stotko, P.}</span><span class="p">,</span>
+<span class="w">     </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{stdgpu: Efficient STL-like Data Structures on the GPU}}</span><span class="p">,</span>
+<span class="w">      </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2019}</span><span class="p">,</span>
+<span class="w">     </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nv">aug</span><span class="p">,</span>
+<span class="w">      </span><span class="na">note</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{arXiv:1908.05936}</span><span class="p">,</span>
+<span class="w">       </span><span class="na">url</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{https://arxiv.org/abs/1908.05936}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://www.researchgate.net/publication/331303359_SLAMCast_Large-Scale_Real-Time_3D_Reconstruction_and_Streaming_for_Immersive_Multi-Client_Live_Telepresence"><strong>SLAMCast: Large-Scale, Real-Time 3D Reconstruction and Streaming for Immersive Multi-Client Live Telepresence</strong></a></p>
+<div class="highlight-bib notranslate"><div class="highlight"><pre><span></span><span class="nc">@article</span><span class="p">{</span><span class="nl">stotko2019slamcast</span><span class="p">,</span>
+<span class="w">    </span><span class="na">author</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{Stotko, P. and Krumpen, S. and Hullin, M. B. and Weinmann, M. and Klein, R.}</span><span class="p">,</span>
+<span class="w">     </span><span class="na">title</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{{SLAMCast: Large-Scale, Real-Time 3D Reconstruction and Streaming for Immersive Multi-Client Live Telepresence}}</span><span class="p">,</span>
+<span class="w">   </span><span class="na">journal</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{IEEE Transactions on Visualization and Computer Graphics}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">volume</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{25}</span><span class="p">,</span>
+<span class="w">    </span><span class="na">number</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{5}</span><span class="p">,</span>
+<span class="w">     </span><span class="na">pages</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2102--2112}</span><span class="p">,</span>
+<span class="w">      </span><span class="na">year</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="s">{2019}</span><span class="p">,</span>
+<span class="w">     </span><span class="na">month</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="nv">may</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="contact">
+<h2>Contact<a class="headerlink" href="#contact" title="Permalink to this heading">#</a></h2>
+<p>Patrick Stotko - <a class="reference external" href="mailto:stotko&#37;&#52;&#48;cs&#46;uni-bonn&#46;de">stotko<span>&#64;</span>cs<span>&#46;</span>uni-bonn<span>&#46;</span>de</a></p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="right-next"
+       href="api/chapters.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapters</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#features">Features</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building">Building</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integration">Integration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributing">Contributing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contact">Contact</a><ul class="nav section-nav flex-column">
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2019, Patrick Stotko.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  Last updated on 2023-08-09.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Made with <a href="https://www.sphinx-doc.org/">Sphinx</a>, <a href="https://www.doxygen.org/index.html">Doxygen</a>, <a href="https://boschglobal.github.io/doxysphinx/">Doxysphinx</a> and <a href="https://sphinx-book-theme.readthedocs.io/">sphinx-book-theme</a>, <a href="https://jothepro.github.io/doxygen-awesome-css/">Doxygen Awesome</a>
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
